@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продвинутый Сайт</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка с бургер-меню -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <h1 class="logo">Warcraft <span>Shop</span></h1>
+                <nav class="nav">
+                    <button class="menu-toggle" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="#"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="#"><i class="fas fa-gamepad"></i> Игры</a></li>
+                        <li><a href="#"><i class="fas fa-tshirt"></i> Мерч</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Контакты</a></li>
+                        <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Слайдер -->
+    <section class="slider">
+        <div class="slide active" style="background-image: url('https://via.placeholder.com/1920x600/2c3e50/ffffff?text=Warcraft+1')">
+            <div class="slide-content">
+                <h2>Новое расширение The War Within!</h2>
+                <a href="#" class="btn">Купить сейчас</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://via.placeholder.com/1920x600/34495e/ffffff?text=Warcraft+2')">
+            <div class="slide-content">
+                <h2>Коллекционные фигурки</h2>
+                <a href="#" class="btn">В магазин</a>
+            </div>
+        </div>
+        <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Карточки товаров -->
+    <main class="main container">
+        <h2 class="section-title">Популярные товары</h2>
+        <div class="products-grid">
+            <!-- Карточка 1 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/3498db/ffffff?text=Warcraft+Game" alt="Игра">
+                <h3>World of Warcraft</h3>
+                <p class="price">1999 руб.</p>
+                <button class="btn add-to-cart" data-product="WoW">В корзину</button>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Warcraft+Shirt" alt="Футболка">
+                <h3>Футболка "Альянс"</h3>
+                <p class="price">1499 руб.</p>
+                <button class="btn add-to-cart" data-product="Shirt">В корзину</button>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Warcraft+Figure" alt="Фигурка">
+                <h3>Фигурка Артаса</h3>
+                <p class="price">4999 руб.</p>
+                <button class="btn add-to-cart" data-product="Figure">В корзину</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваша корзина</h2>
+            <ul id="cart-items">
+                <!-- Тут будут товары -->
+            </ul>
+            <p class="total">Итого: <span>0</span> руб.</p>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>О нас</h3>
+                    <p>Официальный магазин по вселенной Warcraft.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> info@warcraftshop.ru</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Warcraft Shop. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
